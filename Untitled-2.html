@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Normane Hammadi - Électromécanicien</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== HEADER ===== */
+header {
+    background: url("https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc") center/cover no-repeat;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 55px;
+    margin: 0;
+}
+
+header p {
+    font-size: 22px;
+}
+
+/* ===== SECTIONS IMAGE ===== */
+.section-image {
+    position: relative;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-image::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+
+.section-content {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* ===== SERVICES ===== */
+.services {
+    background: #f4f4f4;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.service-box {
+    display: inline-block;
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* ===== FORM ===== */
+.form-section {
+    background: url("https://images.unsplash.com/photo-1518770660439-4636190af475") center/cover no-repeat;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+form {
+    background: white;
+    color: black;
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+input, button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background: #1f3a5f;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background: #16324d;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+    <h1>Normane Hammadi</h1>
+    <p>Électromécanicien passionné par la performance et la précision</p>
+</header>
+
+<section class="section-image" style="background:url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') center/cover;">
+    <div class="section-content">
+        <h2>À propos de moi</h2>
+        <p>
+            Je suis quelqu’un de passionné par le fonctionnement des machines et les systèmes techniques.
+            Ce qui me motive, c’est de comprendre, analyser et réparer efficacement.
+        </p>
+        <p>
+            J’aime le travail bien fait, précis, et je cherche toujours à m’améliorer pour devenir
+            un électromécanicien compétent et fiable.
+        </p>
+    </div>
+</section>
+
+<section class="services">
+    <h2>Mes services</h2>
+
+    <div class="service-box">
+        ⚙️<br>
+        Maintenance<br>
+        <small>Suivi et entretien des machines</small>
+    </div>
+
+    <div class="service-box">
+        🔍<br>
+        Diagnostic<br>
+        <small>Recherche et analyse de pannes</small>
+    </div>
+
+    <div class="service-box">
+        🔧<br>
+        Réparation<br>
+        <small>Intervention rapide et efficace</small>
+    </div>
+
+</section>
+
+<section class="form-section">
+    <h2>Prendre rendez-vous</h2>
+    <p>Besoin d’une intervention ou d’un diagnostic ? Contactez-moi simplement ici.</p>
+
+    <form>
+        <input type="text" placeholder="Votre nom" required>
+        <input type="email" placeholder="Votre email" required>
+        <input type="date" required>
+        <input type="time" required>
+        <button type="submit">Envoyer la demande</button>
+    </form>
+</section>
+
+</body>
+</html>
